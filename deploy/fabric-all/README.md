@@ -5,14 +5,14 @@ Sproutcore applications are deployed to a server from a local development area w
 typically consists of several directories, apps, for the applications, and frameworks,
 for dependencies of the applications. sc-build is run within the development area to
 produce minified javascript and css files to tmp/build/sc. The sc directory contains
-subdirectories for each app, storing the minified files under a "hash" directory. The
-hash is a long alphanumeric string, unique for each build, and doubling as the name
+subdirectories for each app, storing the minified files under a *hash* directory. The
+*hash* is a long alphanumeric string, unique for each build, and doubling as the name
 of the containing directory. For example, after sc-build, you could have this for a
 Sproutcore app called myapp:
 
         ../project/tmp/build/sc/myapp/myapp/en/bb2cb971f4f39dab7bdcfb7707ca1d24188a503/
 
-and in this "hash" directory, you might find:
+and in this hash directory, you might find:
 
     * index.html
     * javascript.js
@@ -54,7 +54,7 @@ This fabfile.py
 
 Fabric uses a simple scheme, wherein tasks, written as Python methods, are stored in
 a fabfile.py file. You could put many such task methods, along with other Python code,
-in a single fabfile.py. You run a task by typing 'fab task' on the command line, which
+in a single fabfile.py. You run a task by typing *fab task* on the command line, which
 would find and run the task() method in fabfile.py.
 
 In the example shown here, Fabric is used to deploy multiple Sproutcore apps within a
