@@ -19,7 +19,7 @@ and in this "hash" directory, you might find:
 
 For deployment, you would cd to ../project/tmp/build/, then:
 
-        tar cvfz myapp.tgz sc
+        tar cvfz mysc.tgz sc
 
 You would then have a tarball with your app, as minified files, ready for deploying to
 a server. On the server, you would have a directory for the website associated with
