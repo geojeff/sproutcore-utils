@@ -1,0 +1,206 @@
+button
+	SC.ButtonView.design({
+	  layout: { top: ${2:0}, right: ${3:0}, bottom: ${4:0}, left: ${5:0} },
+	  title: '${6:Button}',
+	  action: '${7:myMethod}',
+	  target: '${8:MyApp.Controller}'
+	})${9:,}
+		
+checkbox
+	SC.CheckboxView.design({
+	  layout: { top: ${2:0}, right: ${3:0}, bottom: ${4:0}, left: ${5:0} },
+	  value: ${6:YES},
+	  displayTitle: '${7:Checkbox}'
+	})${8:,}
+		
+class
+	classNames: '${1:className}'.w()${2:,}
+		
+collection
+	SC.CollectionView.design({
+	  layout: { top: ${2:0}, right: ${3:0}, bottom: ${4:0}, left: ${5:0} },
+	  contentBinding: '${6:MyApp.controller.arrangedObjects}',
+	  selectionBinding: '${7:MyApp.controller.selection}'
+	})${8:,}
+		
+container
+	SC.ContainerView.design({
+	  layout: { top:${2:0}, right: ${3:0}, bottom: ${4:0}, left: ${5:0} },
+	  nowShowing: '${6:viewName}'.w()
+	})${7:,}
+		
+dir
+	SC.Logger.dir(${1:Object});
+		
+get()
+	.get('${1:property}');
+		
+getPath()
+	.getPath('${1:property.path}');
+		
+grid
+	SC.GridView.design({
+	  layout: { top: ${2:0}, right: ${3:0}, bottom: ${4:0}, left: ${5:0} },
+	  contentBinding: '${6:MyApp.controller.arrangedObjects}',
+	  selectionBinding: '${7:MyApp.controller.selection}'
+	})${8:,}
+		
+image
+	SC.ImageView.design({
+	  layout: { top: ${2:0}, right: ${3:0}, bottom: ${4:0}, left: ${5:0} },
+	  value: '${6:Class name or URL}'${7:,}
+	})${8:,}
+		
+label
+	SC.LabelView.design({
+	  layout: { top: ${2:0}, right: ${3:0}, bottom: ${4:0}, left: ${5:0} },
+	  value: '${6:Label}'
+	})${7:,}
+		
+list
+	SC.ListView.design({
+	  layout: { top: ${2:0}, right: ${3:0}, bottom: ${4:0}, left: ${5:0} },
+	  contentBinding: '${6:MyApp.controller.arrangedObjects}',
+	  selectionBinding: '${7:MyApp.controller.selection}'
+	})${8:,}
+		
+log
+	SC.Logger.log("${1:Message}");
+		
+Observer
+	${TM_SELECTED_TEXT}Observer: function()
+	{
+		$0
+	}.observes('${1:${TM_SELECTED_TEXT:${TM_CURRENT_WORD:property}}}'${2:,'${3:secondary}'})${10:,}
+		
+Property
+	${TM_SELECTED_TEXT}: function()
+	{
+		$0
+	}.property('${1:${TM_SELECTED_TEXT:${TM_CURRENT_WORD:property}}}'${2:,'${3:secondary}'})${10:,}
+		
+radio
+	SC.RadioView.design({
+	  layout: { top: ${2:0}, right: ${3:0}, bottom: ${4:0}, left: ${5:0} },
+	  layoutDirection: ${7:SC.LAYOUT_VERTICAL},
+	  items: [${8:{ title: 'Welcome', value: 'welcome'\}, ...}],
+	  itemTitleKey: '${9:title}',
+	  itemValueKey: '${10:value}'
+	})${11:,}
+		
+scene
+	SC.SceneView.design({
+	  layout: { top: ${2:0}, right: ${3:0}, bottom: ${4:0}, left: ${5:0} },
+	  scenes: '${6:master detail}',
+	  nowShowing: '${7:master}',
+	  transitionDuration: 200
+	})${8:,}
+		
+scroll
+	SC.ScrollView.design({
+	  layout: { top: ${2:0}, right: ${3:0}, bottom: ${4:0}, left: ${5:0} },
+	  contentView: ${6:SC.View...}
+	})${7:,}
+		
+Section Comment (::___)
+	// ..........................................................
+	// $0
+	// 
+		
+segmented
+	SC.SegmentedView.design({
+	  layout: { top: ${2:0}, right: ${3:0}, bottom: ${4:0}, left: ${5:0} },
+	  layoutDirection: ${7:SC.LAYOUT_VERTICAL},
+	  allowsMultipleSelection: ${8:NO},
+	  allowsEmptySelection: ${9:YES},
+	  items: [${10:{ title: 'Welcome', value: 'welcome'\}, ...}],
+	  itemTitleKey: '${11:title}',
+	  itemValueKey: '${12:value}'
+	})${13:,}
+		
+select
+	SC.SelectView.design({
+	  layout: { top: ${2:0}, right: ${3:0}, bottom: ${4:0}, left: ${5:0} },
+	  objects: [${8:{ title: 'Welcome', value: 'welcome'\}, ...}],
+	  nameKey: '${9:title}',
+	  valueKey: '${10:value}'
+	})${11:,}
+		
+set()
+	.set('${1:property}',${2:value});
+		
+slider
+	SC.SliderView.design({
+	  layout: { top: ${2:0}, right: ${3:0}, bottom: ${4:0}, left: ${5:0} },
+	  value: ${6:0.5},
+	  minimum: ${7:0},
+	  maximum: ${8:1},
+	  step: ${9:0.1}
+	})${10:,}
+		
+sourcelist
+	SC.SourceListView.design({
+	  layout: { top: ${2:0}, right: ${3:0}, bottom: ${4:0}, left: ${5:0} },
+	  contentBinding: '${6:MyApp.controller.arrangedObjects}',
+	  selectionBinding: '${7:MyApp.controller.selection}',
+	  contentValueKey: '${8:displayName}'
+	})${9:,}
+		
+split
+	SC.SplitView.design({
+	  layout: { top: ${2:0}, right: ${3:0}, bottom: ${4:0}, left: ${5:0} },
+	  defaultThickness: ${6:0.25},
+	  layoutDirection: ${7:SC.LAYOUT_VERTICAL},
+	 
+	  topLeftView: ${8:SC.View...}
+	
+	  dividerView: SC.SplitDividerView.design(),
+	 
+	  bottomRightView: ${9:SC.View...}
+	})${10:,}
+		
+stacked
+	SC.StackedView.design({
+	  layout: { top: ${2:0}, right: ${3:0}, bottom: ${4:0}, left: ${5:0} },
+	  contentBinding: '${6:MyApp.controller.arrangedObjects}',
+	  selectionBinding: '${7:MyApp.controller.selection}'
+	})${8:,}
+		
+Super
+	sc_super(${1:this},${2:arguments});
+		
+tab
+	SC.TabView.design({
+	  layout: { top: ${2:0}, right: ${3:0}, bottom: ${4:0}, left: ${5:0} },
+	  items: [${6:{ title: 'Welcome', value: 'welcome'\}, ...}],
+	  itemTitleKey: '${7:title}',
+	  itemValueKey: '${8:value}',
+	  value: '${9:welcome}'
+	})${10:,}
+		
+text
+	SC.TextFieldView.design({
+	  layout: { top: ${2:0}, right: ${3:0}, bottom: ${4:0}, left: ${5:0} },
+	  hint: '${6:Search...}',
+	  isPassword: ${7:YES},
+	  isTextArea: ${8:NO}
+	})${9:,}
+		
+thumb
+	SC.ThumbView.design({
+	  layout: { top: ${2:0}, right: ${3:0}, bottom: ${4:0}, left: ${5:0} },
+	  isEnabled: ${6:YES}
+	})${7:,}
+		
+view
+	SC.View.design({
+	  layout: { top: ${2:0}, right: ${3:0}, bottom: ${4:0}, left: ${5:0} },
+	  childViews: '${6:viewName}'.w(),
+	})${8:,}
+		
+web
+	SC.WebView.design({
+	  layout: { top: ${2:0}, right: ${3:0}, bottom: ${4:0}, left: ${5:0} },
+	  value: '${6:www.google.com}'
+	})${7:,}
+		
