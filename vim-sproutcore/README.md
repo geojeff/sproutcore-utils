@@ -20,3 +20,6 @@ and with the .js extension used for sproutcore files, it works. This might not
 work for everyone.
 
 I'll update as I test...
+
+Added a test.js file, which contains the snippet triggers for sproutcore snippets.
+Copy this file and edit the copy to test snippet completion.
