@@ -26,7 +26,7 @@ WebStorm. However, sometimes I do use macvim and am interested still. Recently, 
 irc, got a message from user devcorkvince:
 
 devcorkvince> geojeff, to add sproutcore.snippets and auto load it on javascript files,
-              you just need to rename it javascript-sproutcore.snippets
+you just need to rename it javascript-sproutcore.snippets
 
 Added a test.js file, which contains the snippet triggers for sproutcore snippets.
 Copy this file and edit the copy to test snippet completion.
